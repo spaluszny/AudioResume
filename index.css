@@ -1,6 +1,6 @@
 body{
     /* width: 60%; */
-    background-color: #E7E3D1;
+    background-color: #f6f3e5;
     margin: auto;
 }
 
@@ -44,7 +44,7 @@ li {
   }
 
   nav{
-    width: 60%;
+    width: 70%;
     margin: auto;
   }
 
@@ -291,3 +291,59 @@ input[type=text], select, textarea {
     padding-top: 30px;
     width: 500px;
   }
+
+  #index{
+    margin: auto;
+    width: 80%;
+  }
+
+  .all-albums-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between items */
+    padding-top: 200px;
+  }
+  
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 350px; /* Set a fixed width for the album container */
+  }
+  
+  .img-album,
+  .img-vinyl {
+    width: 100%; /* Make images fill their container */
+    max-width: 600px; /* Set a maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-vinyl {
+    left: 50px;
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.3s ease, left 0.3s ease;
+    transform: rotate(-90deg);
+  }
+  
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 140px;
+    cursor: pointer;
+  }
+  
+  .album-flex:hover .img-album {
+    transform: translate(-10px);
+    cursor: pointer;
+  }
+  
