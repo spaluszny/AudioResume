@@ -4,6 +4,19 @@ body{
     margin: auto;
 }
 
+.live-body{
+  background-color: #C0D3A8;;
+}
+
+.studio-body{
+  background-color: #D3A8A8;
+}
+
+.post-body{
+  background-color: #C7F0FF;
+}
+
+
 h1 ,h2{
     font-family: "Oswald", sans-serif;
     color: darkslategray;
@@ -53,6 +66,59 @@ li {
     width: 60%;
     margin: auto;
   }
+
+
+  .all-albums-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between items */
+    padding-top: 150px;
+  }
+  
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width:225px; /* Set a fixed width for the album container */
+  }
+  
+  .img-album,
+  .img-vinyl {
+    width: 100%; /* Make images fill their container */
+    max-width: 600px; /* Set a maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 0px;
+  }
+  
+  .img-vinyl {
+    left: 50px;
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.3s ease, left 0.3s ease;
+    transform: rotate(-90deg);
+  }
+  
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 100px;
+    cursor: pointer;
+  }
+  
+  .album-flex:hover .img-album {
+    transform: translate(-10px);
+    cursor: pointer;
+  }
+  
   /******************************* About *******************************/
 
 #about {
@@ -168,182 +234,8 @@ input[type=text], select, textarea {
     padding-top: 80px;
   }
 
-  /******************************* Work *******************************/
+    /******************************* Live Sound *******************************/
 
-  #audio {
-    /* width: 1000px; */
-    margin: 0 auto;
-  }
-  
-  #audio p {
-    line-height: 1.3em;
-    font-size: 18px;
-    font-family: 'Josefin Slab', serif;
-  }
-  
-  #audio header {
-    height: 300px;
-    background-size: cover;
-  }
-  
-  .audio-title {
-    padding-top: 130px;
-  }
-  
-  #audio h1 {
-    /* border: solid 2px white; */
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    /* margin-top: 10px; */
-    margin-bottom: 40px;
-    padding: 20px;
-    font-size: 50px;
-  }
-  
-  #audio h2 {
-    color: darkslategray;
-    line-height: 1em;
-    font-size: 30px;
-  }
-  
-  #audio h3 {
-    line-height: 1em;
-  }
-  
-  #audio h4 {
-    line-height: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  /************* Live Sound *************/
-
-.img-audio {
-    width: 400px;
-    border-radius: 5%;
-    padding: 0;
-  }
-  
-  .livesound {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  
-  }
-  
-  .sound-description {
-    padding-left: 30px;
-    width: 600px;
-  }
-  
-  /************* Studio ****************/
-  /* .studio-background {
-    background-color: white;
-  } */
-  
-  .studio {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    padding-top: 30px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .studio-description {
-    padding-right: 30px;
-    width: 525px;
-  }
-  
-  .img-studio {
-    height: 350px;
-    border-radius: 5%;
-    margin-top: 50px;
-  }
-  
-  /************* Post Production *************/
-  
-  .img-post {
-    width: 300px;
-    border-radius: 5%;
-    padding: 0;
-  }
-  
-  .post {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .post-description {
-    padding-left: 30px;
-    padding-top: 30px;
-    width: 500px;
-  }
-
-  #index{
-    margin: auto;
-    width: 80%;
-  }
-
-  .all-albums-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px; /* Add space between items */
-    padding-top: 200px;
-  }
-  
-  .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    width: 350px; /* Set a fixed width for the album container */
-  }
-  
-  .img-album,
-  .img-vinyl {
-    width: 100%; /* Make images fill their container */
-    max-width: 600px; /* Set a maximum width for images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    position: absolute;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  
-  .img-vinyl {
-    left: 50px;
-    position: absolute;
-    z-index: 0;
-    transition: transform 0.3s ease, left 0.3s ease;
-    transform: rotate(-90deg);
-  }
-  
-  .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 140px;
-    cursor: pointer;
-  }
-  
-  .album-flex:hover .img-album {
-    transform: translate(-10px);
-    cursor: pointer;
-  }
-  
+    #live body{
+      background-color: #C0D3A8;
+    }
