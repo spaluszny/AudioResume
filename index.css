@@ -5,7 +5,7 @@ body{
 }
 
 .live-body{
-  background-color: #C0D3A8;;
+  background-color: #C0D3A8;
 }
 
 .studio-body{
@@ -73,7 +73,6 @@ li {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px; /* Add space between items */
-    padding-top: 150px;
   }
   
   .album-flex {
@@ -82,6 +81,7 @@ li {
     align-items: center;
     padding: 20px;
     position: relative;
+    padding-top: 200px;
     width:225px; /* Set a fixed width for the album container */
   }
   

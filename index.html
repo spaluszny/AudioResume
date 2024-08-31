@@ -16,9 +16,11 @@
 
 </head>
 
-<body>
-    
-    <div class="transition is-active"></div>
+<body data-barba="wrapper">
+
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
     
     <nav>
         <ul>
@@ -32,7 +34,7 @@
     </nav>
 
 
-    <main id="index">
+    <main id="index" data-barba="container" data-barba-namespace="home-section">
 
         <!-- <div class="album-flex">
             <img src="/Assets/LiveSoundAlbum.png" class="img-album" alt="audio">
@@ -42,15 +44,15 @@
 
         <div class="all-albums-container">
             <div class="album-flex">
-                <a href="/livesound.html"> <img src="/Assets/LiveSoundVinyl.png" class="img-vinyl" alt="audio">
+                <a class="a-ref" href="/livesound.html"> <img src="/Assets/LiveSoundVinyl.png" class="img-vinyl" alt="audio">
                 <img src="/Assets/LiveSoundAlbum.png" class="img-album" alt="audio"></a>
             </div>
             <div class="album-flex">
-                <a href="/studio.html"> <img src="/Assets/StudioWorkVinyl.png" class="img-vinyl" alt="audio">
+                <a class="a-ref" href="/studio.html"> <img src="/Assets/StudioWorkVinyl.png" class="img-vinyl" alt="audio">
                 <img src="/Assets/StudioWorkAlbum.png" class="img-album" alt="audio"> </a>
             </div>
             <div class="album-flex">
-                <a href="/post.html"><img src="/Assets/PostProductionVinyl.png" class="img-vinyl" alt="audio">
+                <a class="a-ref" href="/post.html"> <img src="/Assets/PostProductionVinyl.png" class="img-vinyl" alt="audio">
                 <img src="/Assets/PostProduction.png" class="img-album" alt="audio"></a>
             </div>
         </div>
@@ -140,8 +142,13 @@
 
 
 
-    <script scr="main.js"></script>
+   
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
