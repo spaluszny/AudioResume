@@ -1,108 +1,36 @@
-// window.onload = () => {
-//     const transition_el = document.querySelector('.transition-1');
-//     const anchors = document.querySelectorAll('href');
 
-//     setTimeout(()=>{
-//         transition_el.classList.remove('is-active');
-//     }, 500);
-
-//     for (let i = 0; i < anchors.length; i++){
-//         const anchor = anchors[i];
-
-//         anchor.addEventListener('click', e=>{
-//             e.preventDefault();
-//             let target = e.target.href;
-//             console.log(target);
-
-//             transition_el.classList.add('is-active');
-
-//             setTimeout(()=>{
-//                 window.location.href = target;
-//             }, 500);
-//         })
-//     }
-// }
-
-// window.onload = () => {
-//     const transition_el = document.querySelector('.transition-2');
-//     const anchors = document.querySelectorAll('href');
-
-//     setTimeout(()=>{
-//         transition_el.classList.remove('is-active');
-//     }, 500);
-
-//     for (let i = 0; i < anchors.length; i++){
-//         const anchor = anchors[i];
-
-//         anchor.addEventListener('click', e=>{
-//             e.preventDefault();
-//             let target = e.target.href;
-//             console.log(target);
-
-//             transition_el.classList.add('is-active');
-
-//             setTimeout(()=>{
-//                 window.location.href = target;
-//             }, 500);
-//         })
-//     }
-// }
-
-function delay(n) {
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n);
-    });
-}
-
-function pageTransition() {
-    var tl = gsap.timeline();
-    tl.to(".loading-screen", {
-        duration: 1.2,
-        width: "100%",
-        left: "0%",
-        ease: "Expo.easeInOut",
-    });
-
-    tl.to(".loading-screen", {
-        duration: 1,
-        width: "100%",
-        left: "100%",
-        ease: "Expo.easeInOut",
-        delay: 0.3,
-    });
-    tl.set(".loading-screen", { left: "-100%" });
-}
-
-function contentAnimation() {
-    var tl = gsap.timeline();
-    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
-}
-
-$(function () {
-    barba.init({
-        sync: true,
-
-        transitions: [
-            {
-                async leave(data) {
-                    const done = this.async();
-
-                    pageTransition();
-                    await delay(1000);
-                    done();
-                },
-
-                async enter(data) {
-                    contentAnimation();
-                },
-
-                async once(data) {
-                    contentAnimation();
-                },
-            },
-        ],
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    // Add the fade-in class to trigger the transition
+    document.body.classList.add('fade-in');
 });
+
+
+function handleTransition(linkClass, transitionClass, targetUrl) {
+    // Prevent default link behavior
+    document.querySelector(linkClass).addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Create a div for the transition
+        const transitionDiv = document.createElement('div');
+        transitionDiv.classList.add(transitionClass);
+
+        // Append the div to the body
+        document.body.appendChild(transitionDiv);
+
+        // Trigger the transition
+        setTimeout(() => {
+            transitionDiv.classList.add('active');
+        }, 10); // small delay to allow the CSS transition to kick in
+
+        // Redirect to the target URL after the transition
+        setTimeout(() => {
+            window.location.href = targetUrl;
+        }, 500); // match this duration with the CSS transition time
+    });
+}
+
+// Handle transitions for each link
+handleTransition('.livesound-link', 'livesound-transition', '/livesound.html');
+handleTransition('.studiowork-link', 'studiowork-transition', '/studio.html');
+handleTransition('.postproduction-link', 'postproduction-transition', '/post.html');
+

@@ -3,7 +3,16 @@ body{
     background-color: #f6f3e5;
     margin: auto;
 }
+/* Initial state: transparent */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
 
+/* Final state: fully visible */
+body.fade-in {
+  opacity: 1;
+}
 .live-body{
   background-color: #C0D3A8;
 }
@@ -12,18 +21,35 @@ body{
   background-color: #D3A8A8;
 }
 
+
 .post-body{
   background-color: #C7F0FF;
 }
 
+#live{
+  width: 65%;
+  margin: auto;
+}
+
+#studio{
+  width: 65%;
+  margin: auto;
+}
+
+#post{
+  width: 65%;
+  margin: auto;
+}
+
+
 
 h1 ,h2{
     font-family: "Oswald", sans-serif;
-    color: darkslategray;
+    color: black;
 }
 
 p, a, input, label{
-    font-family: "Moderustic", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     /* font-weight: 500; */
 }
 
@@ -57,8 +83,8 @@ li {
   }
 
   nav{
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 0  auto ;
   }
 
   /******************************* Index *******************************/
@@ -82,7 +108,7 @@ li {
     padding: 20px;
     position: relative;
     padding-top: 200px;
-    width:225px; /* Set a fixed width for the album container */
+    width:350px; /* Set a fixed width for the album container */
   }
   
   .img-album,
@@ -110,7 +136,7 @@ li {
   
   .album-flex:hover .img-vinyl {
     transform: rotate(90deg);
-    left: 100px;
+    left: 160px;
     cursor: pointer;
   }
   
@@ -152,7 +178,7 @@ li {
   #about p {
     line-height: 1.2em;
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
   
   }
@@ -236,6 +262,117 @@ input[type=text], select, textarea {
 
     /******************************* Live Sound *******************************/
 
-    #live body{
-      background-color: #C0D3A8;
+    .live-body h1{
+      font-family: "Oswald", sans-serif;
+      color: black;
+      font-size: 200px;
+      line-height: .25;
     }
+
+    .live-body p{
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 25px;
+    }
+    .studio-body h1{
+      font-family: "Oswald", sans-serif;
+      color: black;
+      font-size: 200px;
+      line-height: .25;
+    }
+    .studio-body p{
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 25px;
+    }
+    .post-body h1{
+      font-family: "Oswald", sans-serif;
+      color: black;
+      font-size: 150px;
+      line-height: .25;
+    }
+
+    .post-body p{
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-size: 25px;
+    }
+
+
+  
+
+
+
+    /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) {
+  .img-home {
+    right: -600px;
+  }
+
+}
+
+
+   /******************************* Media device resize *******************************/
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+    width:200px; /* Set a fixed width for the album container */
+  }
+
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 100px;
+    cursor: pointer;
+  }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+    width:225px; /* Set a fixed width for the album container */
+  }
+
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 90px;
+    cursor: pointer;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 200px;
+    width:375px; /* Set a fixed width for the album container */
+  }
+
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 160px;
+    cursor: pointer;
+  }
+
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
