@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('fade-in');
 });
 
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // Remove transition-related classes if the page was loaded from cache
+        document.body.classList.remove('fade-in', 'livesound-transition', 'studiowork-transition', 'postproduction-transition');
+
+        window.location.reload(); // Force a reload if coming back to the page
+    }
+});
+
+// window.addEventListener('pageshow', function(event) {
+//     if (event.persisted) {
+//         window.location.reload(); // Force a reload if coming back to the page
+//     }
+// });
+
 
 function handleTransition(linkClass, transitionClass, targetUrl) {
     // Prevent default link behavior

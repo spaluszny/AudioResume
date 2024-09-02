@@ -44,9 +44,19 @@ body.fade-in {
 
 
 h1 ,h2{
-    font-family: "Oswald", sans-serif;
-    color: black;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 150px;
+  line-height: .25;
 }
+
+h2{
+  font-family: "Oswald", sans-serif;
+  color: darkslategray;
+  font-size: 75px;
+  line-height: .25;
+}
+
 
 p, a, input, label{
     font-family: 'Times New Roman', Times, serif;
@@ -262,44 +272,25 @@ input[type=text], select, textarea {
 
     /******************************* Live Sound *******************************/
 
-    .live-body h1{
-      font-family: "Oswald", sans-serif;
-      color: black;
-      font-size: 200px;
-      line-height: .25;
-    }
 
     .live-body p{
       font-family: 'Times New Roman', Times, serif;
       color: black;
       font-size: 25px;
     }
-    .studio-body h1{
-      font-family: "Oswald", sans-serif;
-      color: black;
-      font-size: 200px;
-      line-height: .25;
-    }
+
     .studio-body p{
       font-family: 'Times New Roman', Times, serif;
       color: black;
       font-size: 25px;
     }
-    .post-body h1{
-      font-family: "Oswald", sans-serif;
-      color: black;
-      font-size: 150px;
-      line-height: .25;
-    }
+
 
     .post-body p{
       font-family: 'Times New Roman', Times, serif;
       color: black;
       font-size: 25px;
     }
-
-
-  
 
 
 
@@ -362,13 +353,13 @@ input[type=text], select, textarea {
     align-items: center;
     padding: 20px;
     position: relative;
-    margin-top: 200px;
-    width:375px; /* Set a fixed width for the album container */
+    margin-top: 150px;
+    width:225px; /* Set a fixed width for the album container */
   }
 
   .album-flex:hover .img-vinyl {
     transform: rotate(90deg);
-    left: 160px;
+    left: 100px;
     cursor: pointer;
   }
 
