@@ -14,11 +14,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Crushed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crushed&display=swap" rel="stylesheet">
+
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="studio-body">
-
+<main id = "studio-nav">
     <nav>
         <ul>
             <li><a href="/index.html"><img src="/Assets/Logo.gif" class="logo"></a></li>
@@ -29,16 +32,20 @@
             </div>
         </ul>
     </nav>
+</main>
     <main id="studio">
-
-        <h1>STUDIO WORK<span
-            style="color:darkred; font-size:100px; font-family: 'Times New Roman', Times, serif;">.</span></h1>
-        <p>Spearheaded the recording, editing, and mixing of <strong>6 high-quality multitrack recordings</strong> in Joshi Studio, 
-            utilizing an S6 console. I gained strong technical proficiency in studio environments, ensuring the 
+        <div class="live-header">
+            <h1>STUDIO WORK<span
+                    style="color:darkred; font-size:100px; font-family: 'Times New Roman', Times, serif;">.</span></h1>
+        </div>
+        <hr>
+        <p>Spearheaded the recording, editing, and mixing of <strong>6 high-quality multitrack recordings</strong> in
+            Joshi Studio,
+            utilizing an S6 console. I gained strong technical proficiency in studio environments, ensuring the
             delivery of professional-grade audio mixes.
         </p>
 
-        <img src="/Assets/scroll.mp4" class="img-scroll" alt="microphone">
+        <img src="/Assets/scroll-pink.mp4" class="img-scroll" alt="microphone">
 
 
         <div class="container-flex">
@@ -62,7 +69,7 @@
                     ...</p>
             </div>
 
-            <div><img src="/Assets/Audio Clip Art/AudioMic.png" class="img-livesound" alt="microphone">
+            <div><img src="/Assets/board.png" class="img-livesound" alt="microphone">
             </div>
         </div>
 
@@ -87,14 +94,32 @@
                     ...</p>
             </div>
 
-            <div><img src="/Assets/Audio Clip Art/AudioRack.png" class="img-livesound" alt="AudioRack">
+
+            <div class="box">
+                <div class="player">
+                    <div class="record on">
+                        <div class="label"></div>
+                    </div>
+                    <div class="tone-arm play">
+                        <div class="control"></div>
+                    </div>
+                    <button class="btn"><img src="/Assets/play.webp" class="img-play"></button>
+                    <div class="slider-container">
+                        <input type = "range" class="slider" min="0" max="1" step="0.1" value="0.7">
+                    </div>
+                </div>
+                <figcaption>Hit <img src="/Assets/play.webp" class="img-play-text"> to hear a sample of my studio work!</figcaption>
             </div>
+            
         </div>
+
+        <audio loop class="my-song" src="/Assets/Mindfully Blind - All My Friends Are Leaving.wav" preload="auto"></audio>
 
     </main>
 
 
     <script src="/main.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
