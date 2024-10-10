@@ -48,7 +48,7 @@ body.fade-in {
 }
 
 #post{
-  width: 65%;
+  width: 75%;
   margin: auto;
 }
 
@@ -622,8 +622,51 @@ input[type=text], select, textarea {
 
     #post hr{
       border:none;
-      background: linear-gradient(to left, var(--white) 33.33%, var(--green)33.33%, var(--green) 66.66%, var(--darkblue) 66.66%);
+      background: linear-gradient(to left, var(--darkgreen) 33.33%, var(--white)33.33%, var(--white) 66.66%, var(--darkblue) 66.66%);
     }
+
+    .post-header2{
+      /* padding-top: 100px; */
+      font-size: 45px;
+      color: var(--darkblue);
+
+    }
+
+    .post-body p{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+      font-size: 20px;
+      padding-top: 25px;
+      font-weight: 200;
+      margin: 0em;
+
+    }
+    
+    iframe{
+      width: 450px; 
+      height: 253px;
+
+    }
+
+    .video-container {
+      position: relative;
+      text-align: center;
+    }
+ 
+    .overlay-image {
+      position: absolute;
+      top: -170px;
+      right: 175px;
+      width: 600px;
+      height: auto;
+      pointer-events: none;
+
+    }
+
+    .flex-text {
+      width: 450px; /* Adjust to fit the layout */
+  }
+
 
 
 
