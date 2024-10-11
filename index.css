@@ -320,16 +320,28 @@ input[type=text], select, textarea {
   }
 
     /******************************* Live Sound *******************************/
-
+    .live-bio {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+      font-size: 100px;
+      font-weight: 200;
+      margin: 0em;
+      padding-top: 20px;
+    }
 
     .live-body p{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: black;
-      font-size: 20px;
-      padding-top: 25px;
+      font-size: 14px;
       font-weight: 200;
       margin: 0em;
 
+    }
+
+    .live-body h3{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 25px;
+      font-size: 16px;
     }
 
     .live-header{
