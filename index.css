@@ -261,12 +261,13 @@ li {
   /******************************* Contact *******************************/
 
   #contact{
-    width:60%;
+    width:80%;
     margin: auto;
   }
 
   #contact h1{
     font-size: 60px;
+    padding-top: 50px;
   }
 
   /* Style inputs with type="text", select elements and textareas */
@@ -292,6 +293,11 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -303,21 +309,22 @@ input[type=text], select, textarea {
     width: 500px;
     padding-top: 20px;
     margin: auto;
+    padding-bottom: 50px;
   }
 
-  .contact-flex{
+  /* .contact-flex{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row-reverse ;
     flex-wrap: wrap;
-    margin: auto 0;
-  }
+    align-items: center;
+  } */
 
-  .contact-img{
-    width: 550px;
-    height: 550px;
-    padding-top: 80px;
-  }
+  /* .contact-img{
+    width: 100px;
+    height: 100px;
+
+  } */
 
     /******************************* Live Sound *******************************/
     .live-bio{
@@ -354,14 +361,13 @@ input[type=text], select, textarea {
       font-weight: normal;
     }
 
-    .live-header{
+    /* .live-header{
       padding-top: 250px;
       padding-bottom: 25px;
       margin: 0;
-      line-height: 0%;
+      line-height: 6em;
       
-      /* padding-bottom: -1000px; */
-    }
+    } */
     .live-header2{
       /* padding-top: 100px; */
       font-size: 45px;
@@ -738,6 +744,14 @@ input[type=text], select, textarea {
     gap: 50px; /* Add space between items */
   }
 
+  .live-header{
+    padding-top: 100px;
+    padding-bottom: 25px;
+    margin: 0;
+    line-height: 6em;
+    
+  }
+
   /* .logo{
     width: 75px;
 } */
@@ -764,6 +778,15 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
 
+  .live-header{
+    padding-top: 250px;
+    padding-bottom: 25px;
+    margin: 0;
+    line-height: 6em;
+    
+    /* padding-bottom: -1000px; */
+  }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -783,6 +806,16 @@ input[type=text], select, textarea {
     left: 90px;
     cursor: pointer;
   }
+
+  .live-header{
+    padding-top: 250px;
+    padding-bottom: 25px;
+    margin: 0;
+    line-height: 0em;
+
+    
+    /* padding-bottom: -1000px; */
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -801,6 +834,15 @@ input[type=text], select, textarea {
     transform: rotate(90deg);
     left: 100px;
     cursor: pointer;
+  }
+
+  .live-header{
+    padding-top: 250px;
+    padding-bottom: 25px;
+    margin: 0;
+    line-height: 0em;
+    
+    /* padding-bottom: -1000px; */
   }
 
 }
