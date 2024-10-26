@@ -10,10 +10,10 @@
 
 
 body{
-    /* width: 60%; */
     background-color: #f6f3e5;
     margin: auto;
 }
+
 /* Initial state: transparent */
 body {
   opacity: 0;
@@ -24,6 +24,7 @@ body {
 body.fade-in {
   opacity: 1;
 }
+
 .live-body{
   background-color: #C0D3A8;
 }
@@ -31,8 +32,6 @@ body.fade-in {
 .studio-body{
   background-color: #D3A8A8;
 }
-
-
 .post-body{
   background-color: #C7F0FF;
 }
@@ -432,14 +431,7 @@ input[type=text], select, textarea {
 
         /******************************* Studio *******************************/
 
-    .studio-body p{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: black;
-      font-size: 20px;
-      padding-top: 25px;
-      font-weight: 200;
-      margin: 0em;
-    }
+
 
     .studio-header{
       padding-top: 250px;
@@ -464,6 +456,13 @@ input[type=text], select, textarea {
      text-align: right;
      margin: 0;
      /* margin-top: 1px; */
+    }
+
+    .studio-body h3{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding-top: 5px;
+      font-size: 16px;
+      font-weight: normal;
     }
 
 

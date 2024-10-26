@@ -23,25 +23,26 @@
 </head>
 
 <body class="studio-body">
-<main id = "studio-nav">
-    <nav>
-        <ul>
-            <li><a href="/index.html"><img src="/Assets/Logo.gif" class="logo"></a></li>
-            <div class="links">
-                <li><a href="/index.html">PORTFOLIO</a></li>
-                <li><a href="/about.html">ABOUT</a></li>
-                <li><a href="/contact.html">CONTACT</a></li>
-            </div>
-        </ul>
-    </nav>
-</main>
-    <main id="studio">
+    <main id="studio-nav">
+        <nav>
+            <ul>
+                <li><a href="/index.html"><img src="/Assets/Logo.gif" class="logo"></a></li>
+                <div class="links">
+                    <li><a href="/index.html">PORTFOLIO</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </div>
+            </ul>
+        </nav>
+    </main>
+    <main id="studio" data-barba="container" data-barba-namespace="home-section">
         <div class="live-header">
             <h1>STUDIO WORK<span
                     style="color:darkred; font-size:100px; font-family: 'Times New Roman', Times, serif;">.</span></h1>
         </div>
         <hr>
-        <p>Spearheaded the recording, editing, and mixing of <strong>6 high-quality multitrack recordings</strong> in
+        <p class="live-bio"> Spearheaded the recording, editing, and mixing of <strong>6 high-quality multitrack
+                recordings</strong> in
             Joshi Studio,
             utilizing an S6 console. I gained strong technical proficiency in studio environments, ensuring the
             delivery of professional-grade audio mixes. I learned proper stereo mic'ing techiniques, optimal
@@ -56,21 +57,27 @@
 
             <div class="performances-flex-text">
                 <h2 class="studio-header2">Recordings</h2>
-                <p>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    ...</p>
-                <p>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    ...</p>
-                <p>CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    ...</p>
+                <h3><strong>All My Friends</strong> By Mindfully Blind</h3>
+                <p>Recorded, edited, and mixed song with digital console, S6, for local Bloomington band.</p>
+
+                <h3><strong>Disgrace</strong> By Ad Astra</h3>
+                <p>Recorded, edited, and mixed song with digital console, S6, for local Bloomington band.</p>
+
+                <h3><strong>Women in STEM</strong> By Herd Immunity</h3>
+                <p>Recorded, edited, and mixed song with digital console, S6, for local Bloomington band.</p>
+
+                <h3><strong>Picture</strong> By Mindfully Blind</h3>
+                <p>Recorded, edited, and mixed song with digital console, S6, for local Bloomington band.</p>
+
+                <h3><strong>Incoherent</strong> By Mindfully Blind</h3>
+                <p>Recorded, edited, and mixed song with digital console, S6, for local Bloomington band. Later upmixed the stero
+                    version to 5.1 and Dolby Atmos.
+                </p>
+                
+                <h3><strong>Pressure</strong> By Shades of Purple</h3>
+                <p>Recorded, edited, and mixed song with analog console, Audient 8024, for local Bloomington band. Now streaming on Spotify
+                    and Apple music.
+                </p>
             </div>
 
             <div><img src="/Assets/board.png" class="img-livesound" alt="microphone">
@@ -82,22 +89,22 @@
             <div class="performances-flex-text2">
                 <h2 class="studio-header2">Gear and Software</h2>
                 <h3><strong>Gear</strong></h3>
-                <p>Avid S6 - Digital Board</p>
-                <p>Audient 8024 - Analog Board</p>
-                <p>Neve Pre-amps and Eqs</p>
-                <p>Tube Tech Pre-amps and Eqs</p>
-                <p>Universal Audio Teletronix LA-2A</p>
-                <p>Universal Audio 1176LN</p>
+                <p>- Avid S6 - Digital Board</p>
+                <p>- Audient 8024 - Analog Board</p>
+                <p>- Neve Pre-amps and Eqs</p>
+                <p>- Tube Tech Pre-amps and Eqs</p>
+                <p>- Universal Audio Teletronix LA-2A</p>
+                <p>- Universal Audio 1176LN</p>
 
 
                 <h3><strong>Software</strong></h3>
 
-                <p>Pro Tools</p>
-                <p>Logic</p>
-                <p>Reason</p>
-                <p>RX</p>
-                <p>IZotope</p>
-                <p>Dolby Atmos</p>
+                <p>- Pro Tools</p>
+                <p>- Logic</p>
+                <p>- Reason</p>
+                <p>- RX</p>
+                <p>- IZotope</p>
+                <p>- Dolby Atmos</p>
 
                 <h3><strong>Certifications</strong></h3>
                 <p>Pro Tools 101 and 110</p>
@@ -114,21 +121,26 @@
                     </div>
                     <button class="btn"><img src="/Assets/play.webp" class="img-play"></button>
                     <div class="slider-container">
-                        <input type = "range" class="slider" min="0" max="1" step="0.1" value="0.7">
+                        <input type="range" class="slider" min="0" max="1" step="0.1" value="0.7">
                     </div>
                 </div>
-                <figcaption>Hit <img src="/Assets/play.webp" class="img-play-text"> to hear a sample of my studio work!</figcaption>
+                <figcaption>Hit <img src="/Assets/play.webp" class="img-play-text"> to hear a sample of my studio work!
+                </figcaption>
             </div>
-            
+
         </div>
 
-        <audio loop class="my-song" src="/Assets/Mindfully Blind - All My Friends Are Leaving.wav" preload="auto"></audio>
+        <audio loop class="my-song" src="/Assets/Mindfully Blind - All My Friends Are Leaving.wav"
+            preload="auto"></audio>
 
     </main>
 
 
     <script src="/main.js"></script>
     <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 </body>
 
 </html>
