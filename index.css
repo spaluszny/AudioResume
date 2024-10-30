@@ -75,7 +75,7 @@ h2{
 
 
  a, input, label{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.25;
     /* font-weight: 500; */
 }
