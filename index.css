@@ -22,7 +22,7 @@ body {
 
 /* Final state: fully visible */
 body.fade-in {
-  opacity: 0;
+  opacity: 1;
 }
 
 .live-body{
