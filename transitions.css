@@ -9,7 +9,6 @@
     height: 100%;
     background-color: #C0D3A8; /* Replace with the background color of livesound.html */
     transition: top 0.5s ease-in-out;
-
     z-index: 9999;
 }
 
