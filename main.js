@@ -45,7 +45,7 @@ function handleTransition(linkClass, transitionClass, targetUrl) {
 }
 
 // Handle transitions for each link
-handleTransition('.livesound-link', 'livesound-transition', '/livesound.html');
-handleTransition('.studiowork-link', 'studiowork-transition', '/studio.html');
-handleTransition('.postproduction-link', 'postproduction-transition', '/post.html');
+handleTransition('.livesound-link', 'livesound-transition', './livesound.html');
+handleTransition('.studiowork-link', 'studiowork-transition', './studio.html');
+handleTransition('.postproduction-link', 'postproduction-transition', './post.html');
 
