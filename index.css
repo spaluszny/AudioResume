@@ -17,7 +17,7 @@ body{
 /* Initial state: transparent */
 body {
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 /* Final state: fully visible */
