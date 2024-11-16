@@ -206,7 +206,7 @@ li {
   /******************************* About *******************************/
 
 #about {
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -219,24 +219,25 @@ li {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     margin: auto 0;
+    padding-top: 100px;
   }
   
   .img-about {
-    width: 700px;
-    height: 700px;
+    width: 500px;
     /* margin-left: auto; */
     /* border-radius: 5%; */
   }
   
   .about-description {
     /* padding-right: 30px; */
-    width: 600px;
+    width: 500px;
+    height: 500px;
   }
   
   #about p {
     line-height: 1.2em;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
   
   }
@@ -248,8 +249,10 @@ li {
     
   }
   
-  #about h1,h2{
+  #about h3{
     color: darkslategray;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
   }
   
   #about a:hover{
