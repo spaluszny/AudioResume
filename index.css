@@ -152,56 +152,7 @@ li {
   }
 
 
-  .all-albums-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px; /* Add space between items */
-  }
-  
-  .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    padding-top: 200px;
-    width:350px; /* Set a fixed width for the album container */
-  }
-  
-  .img-album,
-  .img-vinyl {
-    width: 100%; /* Make images fill their container */
-    max-width: 600px; /* Set a maximum width for images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    position: absolute;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    left: 0px;
-  }
-  
-  .img-vinyl {
-    left: 50px;
-    position: absolute;
-    z-index: 0;
-    transition: transform 0.3s ease, left 0.3s ease;
-    transform: rotate(-90deg);
-  }
-  
-  .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 160px;
-    cursor: pointer;
-  }
-  
-  .album-flex:hover .img-album {
-    transform: translate(-10px);
-    cursor: pointer;
-  }
+ 
   
   /******************************* About *******************************/
 
@@ -698,26 +649,62 @@ input[type=text], select, textarea {
   }
 
 
+        /******************************* VINYLS *******************************/
+  .all-albums-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between items */
+  }
+  
+  .album-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    padding-top: 200px;
+    width:350px; /* Set a fixed width for the album container */
+  }
+  
+  .img-album,
+  .img-vinyl {
+    width: 100%; /* Make images fill their container */
+    max-width: 600px; /* Set a maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 0px;
+  }
+  
+  .img-vinyl {
+    left: 50px;
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.3s ease, left 0.3s ease;
+    transform: rotate(-90deg);
+  }
+  
+  .album-flex:hover .img-vinyl {
+    transform: rotate(90deg);
+    left: 160px;
+    cursor: pointer;
+  }
+  
+  .album-flex:hover .img-album {
+    transform: translate(-10px);
+    cursor: pointer;
+  }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   /******************************* Media device resize *******************************/
 
     /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
 /* Extra small devices (portrait phones, less than 576px) */
@@ -727,9 +714,12 @@ input[type=text], select, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-top: 50px; */
+    padding-top: 125px;
     position: relative;
     width:200px; /* Set a fixed width for the album container */
+  }
+  .img-vinyl{
+    display: none;
   }
 
   .album-flex:hover .img-vinyl {
@@ -743,7 +733,7 @@ input[type=text], select, textarea {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px; /* Add space between items */
+    gap: 125px; /* Add space between items */
   }
 
   .live-header{
@@ -754,14 +744,20 @@ input[type=text], select, textarea {
     
   }
 
-  /* .logo{
+  .logo{
     width: 75px;
-} */
+  }
+
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 75px;
+
+  }
 
 }
-
-
-   /******************************* Media device resize *******************************/
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 767.98px) {
@@ -769,15 +765,23 @@ input[type=text], select, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding-top: 100px;
     position: relative;
-    width:150px; /* Set a fixed width for the album container */
+    width:100px; /* Set a fixed width for the album container */
   }
 
   .album-flex:hover .img-vinyl {
     transform: rotate(90deg);
     left: 100px;
     cursor: pointer;
+  }
+
+  .all-albums-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px; /* Add space between items */
   }
 
   .live-header{
@@ -787,6 +791,21 @@ input[type=text], select, textarea {
     line-height: 6em;
     
     /* padding-bottom: -1000px; */
+  }
+
+  .img-vinyl{
+    display: inline;
+  }
+
+  .logo{
+    width: 100px;
+  }
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 0px;
   }
 
 }
@@ -818,6 +837,22 @@ input[type=text], select, textarea {
     
     /* padding-bottom: -1000px; */
   }
+
+  .logo{
+    width: 100px;
+  }
+
+
+  .img-vinyl{
+    display: inline;
+  }
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 0px;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -845,6 +880,21 @@ input[type=text], select, textarea {
     line-height: 0em;
     
     /* padding-bottom: -1000px; */
+  }
+  .img-vinyl{
+    display: inline;
+  }
+
+  .logo{
+    width: 100px;
+  }
+
+  .img-album {
+    box-shadow: 0 10px 15px 0px #a6a6a6;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 0px;
   }
 
 }
