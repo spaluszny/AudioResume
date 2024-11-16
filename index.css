@@ -15,15 +15,15 @@ body{
 }
 
 /* Initial state: transparent */
-body {
+/* body {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
-}
+} */
 
 /* Final state: fully visible */
-body.fade-in {
+/* body.fade-in {
   opacity: 1;
-}
+} */
 
 .live-body{
   background-color: #C0D3A8;
