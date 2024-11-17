@@ -50,11 +50,8 @@ body.fade-in {
   width: 75%;
   margin: auto;
 }
-
 #index{
-  width: 90%;
   margin: auto;
-  text-align: center;
 }
 
 
@@ -142,7 +139,7 @@ li {
   }
 
   nav{
-    margin: 0  auto ;
+    margin: auto ;
   }
 
   /******************************* Index *******************************/
@@ -650,27 +647,33 @@ input[type=text], select, textarea {
 
 
         /******************************* VINYLS *******************************/
-  .all-albums-container {
+  
+        .parent-albums{
+          margin: auto 0;
+          padding-top: 200px;
+        }
+  
+    .all-albums-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px; /* Add space between items */
+    margin: auto;
+    height: 300px;
   }
   
   .album-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     position: relative;
-    padding-top: 200px;
-    width:350px; /* Set a fixed width for the album container */
+    padding: 10px;
+    width: 250px; /* Set a fixed width for the album container */
+    border: blue solid 2px;
   }
   
   .img-album,
   .img-vinyl {
     width: 100%; /* Make images fill their container */
-    max-width: 600px; /* Set a maximum width for images */
     height: auto; /* Maintain aspect ratio */
   }
   
@@ -692,7 +695,7 @@ input[type=text], select, textarea {
   
   .album-flex:hover .img-vinyl {
     transform: rotate(90deg);
-    left: 160px;
+    left: 100px;
     cursor: pointer;
   }
   
@@ -707,194 +710,93 @@ input[type=text], select, textarea {
    /******************************* Media device resize *******************************/
 
     /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
-/* Extra small devices (portrait phones, less than 576px) */
-@media (min-width: 550px) {
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .all-albums-container{
+    height: 225px;
+  }
+
+  .parent-albums{
+    padding-top: 175px;
+  }
 
   .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 125px;
-    position: relative;
-    width:200px; /* Set a fixed width for the album container */
-  }
-  .img-vinyl{
-    display: none;
+    width: 175px; /* Set a fixed width for the album container */
+    border: green 3px solid;
   }
 
   .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 100px;
-    cursor: pointer;
+    left: 75px;
   }
 
-  .all-albums-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 125px; /* Add space between items */
-  }
-
-  .live-header{
-    padding-top: 100px;
+  /* .live-header{
+    padding-top: 250px;
     padding-bottom: 25px;
     margin: 0;
-    line-height: 6em;
+    line-height: 0em;
+  } */
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .parent-albums{
+    padding-top: 200px;
     
   }
 
-  .logo{
-    width: 75px;
+  .album-flex {
+    border: yellow 3px solid;
+    width:175px; /* Set a fixed width for the album container */
+    
   }
 
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    position: absolute;
+  .album-flex:hover .img-vinyl {
     left: 75px;
-
   }
 
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (min-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .all-albums-container{
+    height: 400px;
+    width: 400px;
+    gap: 250px;
+    
+  }
+  .parent-albums{
+    padding-top: 125px;
+    padding-bottom: 175px;;
+  }
+
   .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-    position: relative;
-    width:100px; /* Set a fixed width for the album container */
+    width:200px; /* Set a fixed width for the album container */
+    border: pink 3px solid;
   }
 
   .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 100px;
-    cursor: pointer;
-  }
-
-  .all-albums-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px; /* Add space between items */
-  }
-
-  .live-header{
-    padding-top: 250px;
-    padding-bottom: 25px;
-    margin: 0;
-    line-height: 6em;
-    
-    /* padding-bottom: -1000px; */
-  }
-
-  .img-vinyl{
-    display: inline;
+    left: 75px;
   }
 
   .logo{
-    width: 100px;
+    width: 90px;
   }
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    position: absolute;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    left: 0px;
-  }
+ 
 
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 991.98px) {
-  .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    margin-top: 150px;
-    width:150px; /* Set a fixed width for the album container */
-  }
-
-  .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 90px;
-    cursor: pointer;
-  }
-
-  .live-header{
-    padding-top: 250px;
-    padding-bottom: 25px;
-    margin: 0;
-    line-height: 0em;
-
-    
-    /* padding-bottom: -1000px; */
-  }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 550px) {
 
   .logo{
-    width: 100px;
+    width: 75px;
   }
 
-
-  .img-vinyl{
-    display: inline;
-  }
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    position: absolute;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    left: 0px;
-  }
-}
-
-/* Large devices (desktops, less than 1200px) */
-@media (min-width: 1199.98px) {
   .album-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    margin-top: 200px;
-    width:225px; /* Set a fixed width for the album container */
-  }
-
-  .album-flex:hover .img-vinyl {
-    transform: rotate(90deg);
-    left: 100px;
-    cursor: pointer;
-  }
-
-  .live-header{
-    padding-top: 250px;
-    padding-bottom: 25px;
-    margin: 0;
-    line-height: 0em;
-    
-    /* padding-bottom: -1000px; */
-  }
-  .img-vinyl{
-    display: inline;
-  }
-
-  .logo{
-    width: 100px;
-  }
-
-  .img-album {
-    box-shadow: 0 10px 15px 0px #a6a6a6;
-    position: absolute;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    left: 0px;
+    width:175px; /* Set a fixed width for the album container */
+    border: purple 3px solid;
   }
 
 }
