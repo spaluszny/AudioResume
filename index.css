@@ -782,6 +782,13 @@ input[type=text], select, textarea {
 
   .logo{
     width: 90px;
+    top: 20px;
+    left: 20px;
+  }
+
+  li a {
+    margin-right: 10px;
+    font-size: 16px;
   }
  
 
@@ -792,11 +799,12 @@ input[type=text], select, textarea {
 
   .logo{
     width: 75px;
+    top: 10px;
+    left: 20px;
   }
 
   .album-flex {
     width:175px; /* Set a fixed width for the album container */
-    border: purple 3px solid;
   }
 
 }
