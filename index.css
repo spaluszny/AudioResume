@@ -7,7 +7,8 @@
   --darkgreen: #2f4f4f;
   --darkblue: #152669;
 }
-
+html {
+  overflow-x: hidden; }
 
 body{
     background-color: #f6f3e5;
