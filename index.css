@@ -112,6 +112,7 @@ li {
     text-decoration: none;
     color: black;
     font-family: "Crushed", sans-serif;
+    line-height: 1.25em;
     letter-spacing: 5px;
     font-weight: 200;
     font-size: 20px;
@@ -319,6 +320,11 @@ input[type=text], select, textarea {
       line-height: 6em;
       
     } */
+
+    .live-header{
+      /* padding-top: 100px; */
+      padding-top: 175px;
+    }
     .live-header2{
       /* padding-top: 100px; */
       font-size: 45px;
@@ -651,7 +657,7 @@ input[type=text], select, textarea {
   
         .parent-albums{
           margin: auto 0;
-          padding-top: 200px;
+          padding-top: 225px;
         }
   
     .all-albums-container {
@@ -669,7 +675,7 @@ input[type=text], select, textarea {
     position: relative;
     padding: 10px;
     width: 250px; /* Set a fixed width for the album container */
-    border: blue solid 2px;
+    /* border: blue solid 2px; */
   }
   
   .img-album,
@@ -724,7 +730,7 @@ input[type=text], select, textarea {
 
   .album-flex {
     width: 175px; /* Set a fixed width for the album container */
-    border: green 3px solid;
+    /* border: green 3px solid; */
   }
 
   .album-flex:hover .img-vinyl {
@@ -748,8 +754,8 @@ input[type=text], select, textarea {
   }
 
   .album-flex {
-    border: yellow 3px solid;
-    width:175px; /* Set a fixed width for the album container */
+    /* border: yellow 3px solid; */
+    width:150px; /* Set a fixed width for the album container */
     
   }
 
@@ -774,7 +780,7 @@ input[type=text], select, textarea {
 
   .album-flex {
     width:200px; /* Set a fixed width for the album container */
-    border: pink 3px solid;
+    /* border: pink 3px solid; */
   }
 
   .album-flex:hover .img-vinyl {
@@ -790,6 +796,13 @@ input[type=text], select, textarea {
   li a {
     margin-right: 10px;
     font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  h1 ,h2{
+    font-size: 60px;
+    /* line-height: 1; */
+
   }
  
 
@@ -807,6 +820,11 @@ input[type=text], select, textarea {
   .album-flex {
     width:175px; /* Set a fixed width for the album container */
   }
+
+  li a {
+    line-height: 1.75em;
+  }
+
 
 }
 
