@@ -13,6 +13,7 @@ html {
 body{
     background-color: #f6f3e5;
     margin: auto;
+    max-width: 100%;
 }
 
 /* Initial state: transparent */
@@ -821,6 +822,20 @@ input[type=text], select, textarea {
   #live{
     width: 90%;
     margin: auto;
+  }
+
+  .live-bio{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+    /* line-height: 1; */
   }
 }
 
