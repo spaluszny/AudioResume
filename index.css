@@ -32,6 +32,7 @@ body.fade-in {
 
 .studio-body{
   background-color: #D3A8A8;
+
 }
 .post-body{
   background-color: #C7F0FF;
@@ -40,6 +41,7 @@ body.fade-in {
 #live{
   width: 75%;
   margin: auto;
+  padding-bottom: 80px;
 }
 
 #studio{
@@ -56,7 +58,7 @@ body.fade-in {
 }
 
 
-h1 ,h2{
+h1{
   font-family: "Oswald", sans-serif;
   color: black;
   font-size: 100px;
@@ -67,7 +69,7 @@ h1 ,h2{
 h2{
   font-family: "Oswald", sans-serif;
   color: darkslategray;
-  font-size: 75px;
+  font-size: 45px;
   line-height: .25;
 }
 
@@ -76,6 +78,24 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.25;
     /* font-weight: 500; */
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0em;
+
+}
+
+.live-bio{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0em;
+  padding-top: 20px;
 }
 
 .index-p{
@@ -98,7 +118,11 @@ h2{
 }
 
 .links{
-    float: right;
+    /* float: right; */
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    text-align: right;
 }
 
 li {
@@ -112,11 +136,12 @@ li {
     text-decoration: none;
     color: black;
     font-family: "Crushed", sans-serif;
-    line-height: 1.25em;
+    line-height: 1.5em;
     letter-spacing: 5px;
     font-weight: 200;
     font-size: 20px;
     padding: 2px 10px 2px 15px;
+
     
   }
 
@@ -279,32 +304,6 @@ input[type=text], select, textarea {
   } */
 
     /******************************* Live Sound *******************************/
-    .live-bio{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-size: 20px;
-      font-weight: 200;
-      margin: 0em;
-      padding-top: 20px;
-    }
-
-    .container-flex p{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-size: 14px;
-      font-weight: 200;
-      margin: 0em;
-
-    }
-
-    .container-flex2 p{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-size: 14px;
-      font-weight: 200;
-      margin: 0em;
-
-    }
 
     .live-body h3{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -313,30 +312,16 @@ input[type=text], select, textarea {
       font-weight: normal;
     }
 
-    /* .live-header{
-      padding-top: 250px;
-      padding-bottom: 25px;
-      margin: 0;
-      line-height: 6em;
-      
-    } */
-
     .live-header{
       /* padding-top: 100px; */
       padding-top: 175px;
     }
-    .live-header2{
-      /* padding-top: 100px; */
-      font-size: 45px;
-    }
 
     .img-scroll{
-      /* display: block;
-      margin-left: auto;
-      margin-right: 0; */
       padding-top: 40px;
       height: 350px;
       width: 350px;
+      margin: auto;
     }
 
     .container-flex {
@@ -346,8 +331,6 @@ input[type=text], select, textarea {
       justify-content: space-between;
       align-content: center;
       align-items: center;
-
-      
   }
   
   .img-livesound {
@@ -367,7 +350,6 @@ input[type=text], select, textarea {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding-bottom: 100px;
     
 }
 
@@ -796,15 +778,30 @@ input[type=text], select, textarea {
   li a {
     margin-right: 10px;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.75em;
   }
 
-  h1 ,h2{
+  h1 {
     font-size: 60px;
     /* line-height: 1; */
-
   }
- 
+
+  h2{
+    font-size: 40px;
+  }
+  
+  #live{
+    width: 90%;
+    margin: auto;
+  }
+
+  .live-bio{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+
 
 }
 
@@ -821,11 +818,10 @@ input[type=text], select, textarea {
     width:175px; /* Set a fixed width for the album container */
   }
 
-  li a {
-    line-height: 1.75em;
+  #live{
+    width: 90%;
+    margin: auto;
   }
-
-
 }
 
 /* Extra large devices (large desktops)
