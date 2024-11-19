@@ -183,20 +183,31 @@ li {
   /******************************* About *******************************/
 
 #about {
-    width: 80%;
+    width: 60%;
     margin: auto;
     /* border: 1px black solid; */
   }
+
+  /* #about h3{
+    border: blue solid 2px;
+
+  } */
   
+  .about-flex-title{
+    display:flex;
+    flex-direction: column;
+    /* border: black solid 2px; */
+    padding-top: 50px;
+  }
   .about-flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     margin: auto 0;
-    padding-top: 50px;
     gap: 30px;
+    /* border: red solid 2px; */
 
   }
   
@@ -209,14 +220,15 @@ li {
   .about-description {
     /* padding-right: 30px; */
     width: 500px;
-    border: black solid 2px;
+    /* border: black solid 2px; */
   }
   
   #about p {
-    line-height: 1.2em;
+    line-height: 1.25em;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
+    padding-bottom: .5em;
   
   }
   
@@ -822,6 +834,20 @@ input[type=text], select, textarea {
   height: 300px;
   width: 300px;
   
+}
+
+#about {
+  width: 80%;
+  margin: auto;
+  /* border: 1px black solid; */
+}
+
+.about-flex{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  /* border: red solid 2px; */
+
 }
 
 
