@@ -816,6 +816,13 @@ input[type=text], select, textarea {
   width: 100%; /* Adjust to fit the layout */
 }
 
+.img-scroll{
+  padding-top: 40px;
+  height: 300px;
+  width: 300px;
+  
+}
+
 
 }
 
