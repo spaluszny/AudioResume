@@ -341,7 +341,7 @@ input[type=text], select, textarea {
   }
   
   .performances-flex-text {
-      width: 600px; /* Adjust to fit the layout */
+      width: 60%; /* Adjust to fit the layout */
   }
 
   .container-flex2 {
@@ -356,7 +356,7 @@ input[type=text], select, textarea {
 }
 
 .performances-flex-text2 {
-    width: 600px; /* Adjust to fit the layout */
+    width: 60%; /* Adjust to fit the layout */
 }
 
     hr{
@@ -807,6 +807,14 @@ input[type=text], select, textarea {
   #index{
     padding-bottom: 500px;
   }
+
+  .performances-flex-text {
+    width: 100%; /* Adjust to fit the layout */
+}
+
+.performances-flex-text2 {
+  width: 100%; /* Adjust to fit the layout */
+}
 
 
 }
