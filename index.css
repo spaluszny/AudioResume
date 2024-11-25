@@ -200,7 +200,7 @@ nav {
 
 .about-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -212,6 +212,7 @@ nav {
 
 .img-about {
   width: 300px;
+  border-radius: 3%;
   /* margin-left: auto; */
   /* border-radius: 5%; */
 }
