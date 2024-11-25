@@ -259,8 +259,8 @@ nav {
 }
 
 #contact h1 {
-  font-size: 60px;
   padding-top: 50px;
+  font-size: 60px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -824,6 +824,11 @@ figcaption {
     /* line-height: 1; */
   }
 
+  #contact h1 {
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
   h2 {
     font-size: 40px;
   }
@@ -894,6 +899,12 @@ figcaption {
   
   }
 
+  .form {
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
   
 }
 
@@ -942,6 +953,11 @@ figcaption {
     width: 300px;
     /* Increase if necessary */
   
+  }
+
+  #contact h1 {
+    padding-top: 45px;
+    font-size: 50px;
   }
 }
 
