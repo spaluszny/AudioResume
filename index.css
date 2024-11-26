@@ -614,11 +614,6 @@ figcaption {
 
 /******************************* Post *******************************/
 
-.post-body p {
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  font-size: 25px;
-}
 
 #post hr {
   border: none;
@@ -632,15 +627,6 @@ figcaption {
 
 }
 
-.post-body p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-  font-size: 20px;
-  padding-top: 25px;
-  font-weight: 200;
-  margin: 0em;
-
-}
 
 .flex-post {
   display: flex;
