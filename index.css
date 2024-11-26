@@ -409,7 +409,7 @@ hr {
 /******************************* Studio *******************************/
 
 
-#studio h2{
+#studio h2 {
   /* padding-top: 100px; */
   color: var(--darkred);
 }
@@ -436,7 +436,7 @@ hr {
 
 /******************************* Record Player *******************************/
 
-.box{
+.box {
   padding-top: 50px;
 }
 
@@ -642,24 +642,23 @@ figcaption {
 
 }
 
-
-
-.flex-post{
+.flex-post {
   display: flex;
   padding-bottom: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.flex-post-text{
+.flex-post-text {
   width: 400px;
   text-align: left;
 
 }
 
 
-.tv-border{
-  background: #333; 
-  padding: 20px 100px 30px 20px; 
+.tv-border {
+  background: #333;
+  padding: 20px 100px 30px 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
   width: 460px;
   height: 315px;
@@ -669,9 +668,9 @@ figcaption {
 
 }
 
-.tv-knobes{
+.tv-knobes {
   position: absolute;
-  background:  #7d7d7d;
+  background: #7d7d7d;
   border: white solid 2px;
   padding: 18px;
   border-radius: 100%;
@@ -680,10 +679,10 @@ figcaption {
   right: 25px;
 }
 
-.tv-knobes2{
+.tv-knobes2 {
   position: absolute;
   /* background: radial-gradient(circle, #555, #222); */
-  background:  #7d7d7d;
+  background: #7d7d7d;
   border: white solid 2px;
   padding: 18px;
   border-radius: 100%;
@@ -692,7 +691,7 @@ figcaption {
   right: 25px;
 }
 
-iframe{
+iframe {
   position: absolute;
   border-radius: 10%;
   width: 460px;
@@ -874,9 +873,19 @@ iframe{
     width: 90%;
     margin: auto;
   }
+
   #studio {
     width: 90%;
     margin: auto;
+  }
+
+  #post {
+    width: 90%;
+    margin: auto;
+  }
+
+  #post h1 {
+    font-size: 45px;
   }
 
   .live-bio {
@@ -913,7 +922,8 @@ iframe{
     margin: auto;
     /* border: 1px black solid; */
   }
-  #about p{
+
+  #about p {
     font-size: 16px;
     /* border: 1px black solid; */
   }
@@ -933,7 +943,7 @@ iframe{
 
   .container-flex2 {
     padding-top: 10px;
-  
+
   }
 
   .form {
@@ -942,7 +952,47 @@ iframe{
     padding-bottom: 70px;
   }
 
+  iframe {
+    width: 360px;
+    height: 215px;
+  }
+
+  .tv-border {
+    width: 360px;
+    height: 215px;
+
+    background: #333;
+    padding: 15px 75px 20px 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border: #DDB6A0 solid 10px;
+  }
+
+  .flex-post {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .tv-knobes {
+    padding: 12px;
+    top: 20px;
+    right: 20px;
+  }
   
+  .tv-knobes2 {
+    padding: 12px;
+    top: 70px;
+    right: 20px;
+  }
+
+  .flex-post-text {
+    text-align: left;
+    width: 100%;
+  }
+
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -986,10 +1036,11 @@ iframe{
     font-size: 50px;
     /* line-height: 1; */
   }
+
   .img-livesound {
     width: 300px;
     /* Increase if necessary */
-  
+
   }
 
   #contact h1 {
@@ -1006,6 +1057,3 @@ iframe{
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
-
-
-
