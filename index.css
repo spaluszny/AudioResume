@@ -959,6 +959,12 @@ figcaption {
     padding-top: 45px;
     font-size: 50px;
   }
+
+  .form {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
 }
 
 /* Extra large devices (large desktops)
