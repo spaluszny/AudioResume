@@ -643,25 +643,62 @@ figcaption {
 }
 
 
-.video-container {
-  padding-top: 50px;
+
+.flex-post{
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.flex-post-text{
+  width: 400px;
+  text-align: left;
+
+}
+
+
+.tv-border{
+  background: #333; 
+  padding: 20px 100px 30px 20px; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  width: 460px;
+  height: 315px;
+  border: #DDB6A0 solid 15px;
+  z-index: 0;
   position: relative;
-  text-align: center;
+
 }
 
-.overlay-image {
+.tv-knobes{
   position: absolute;
-  top: -170px;
-  right: 175px;
-  width: 600px;
-  height: auto;
-  pointer-events: none;
-
+  background:  #7d7d7d;
+  border: white solid 2px;
+  padding: 18px;
+  border-radius: 100%;
+  z-index: 10;
+  top: 20px;
+  right: 25px;
 }
 
-.flex-text {
-  width: 450px;
-  /* Adjust to fit the layout */
+.tv-knobes2{
+  position: absolute;
+  /* background: radial-gradient(circle, #555, #222); */
+  background:  #7d7d7d;
+  border: white solid 2px;
+  padding: 18px;
+  border-radius: 100%;
+  z-index: 10;
+  top: 80px;
+  right: 25px;
+}
+
+iframe{
+  position: absolute;
+  border-radius: 10%;
+  width: 460px;
+  height: 315px;
+  border: 5px solid #555;
+
 }
 
 
@@ -969,3 +1006,6 @@ figcaption {
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
+
+
+
