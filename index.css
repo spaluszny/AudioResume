@@ -953,14 +953,13 @@ iframe {
   }
 
   iframe {
-    width: 360px;
-    height: 215px;
+    width: 340px;
+    height: 200px;
   }
 
   .tv-border {
-    width: 360px;
-    height: 215px;
-
+    width: 340px;
+    height: 200px;
     background: #333;
     padding: 15px 75px 20px 15px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
