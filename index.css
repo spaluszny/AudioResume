@@ -1039,6 +1039,30 @@ iframe {
     padding-top: 20px;
     padding-bottom: 70px;
   }
+
+  iframe {
+    width: 240px;
+    height: 150px;
+  }
+
+  .tv-border {
+    width: 240px;
+    height: 150px;
+    padding: 10px 50px 20px 10px;
+  }
+
+
+  .tv-knobes {
+    padding: 7px;
+    top: 20px;
+    right: 13px;
+  }
+  
+  .tv-knobes2 {
+    padding: 7px;
+    top: 50px;
+    right: 13px;
+  }
 }
 
 /* Extra large devices (large desktops)
