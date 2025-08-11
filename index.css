@@ -31,15 +31,19 @@ body.fade-in {
 
 .live-body {
   background-color: #C0D3A8;
+  padding-top: 30vh;
 }
 
 .studio-body {
   background-color: #D3A8A8;
+  padding-top: 30vh;
+
 
 }
 
 .post-body {
   background-color: #C7F0FF;
+  padding-top: 30vh;
 }
 
 #live {
@@ -340,7 +344,7 @@ input[type=submit]:hover {
 
 .live-header {
   /* padding-top: 100px; */
-  padding-top: 175px;
+
 }
 
 .live-bio {
