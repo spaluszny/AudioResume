@@ -699,6 +699,7 @@ iframe {
   align-content: center;
   margin: auto;
   gap: 20px;
+  max-width: 1300px;
 }
 
 .album-flex {
