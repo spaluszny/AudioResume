@@ -31,19 +31,17 @@ body.fade-in {
 
 .live-body {
   background-color: #C0D3A8;
-  padding-top: 30vh;
 }
 
 .studio-body {
   background-color: #D3A8A8;
-  padding-top: 30vh;
 
 
 }
 
 .post-body {
   background-color: #C7F0FF;
-  padding-top: 30vh;
+
 }
 
 #live {
@@ -74,8 +72,7 @@ h1 {
   font-family: "Oswald", sans-serif;
   color: black;
   font-size: 100px;
-  /* line-height: 1; */
-  padding: 0;
+  padding-top: 5rem;
 }
 
 h2 {
@@ -198,7 +195,7 @@ nav {
   display: flex;
   flex-direction: column;
   /* border: black solid 2px; */
-  padding-top: 75px;
+
 }
 
 .about-flex {
@@ -259,36 +256,28 @@ nav {
   margin: auto;
 }
 
-#contact h1 {
-  padding-top: 50px;
+#contact h2 {
   font-size: 60px;
+  color: black;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text],
+input[type=email],
 select,
 textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
   border: 1px solid #ccc;
-  /* Gray border */
   border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
   background-color: #f4f2ea;
   resize: none
-    /* Allow the user to vertically resize the textarea (not horizontally) */
 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: darkslategrey;
   color: white;
@@ -304,7 +293,6 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: black;
 }
@@ -339,10 +327,6 @@ input[type=submit]:hover {
   font-weight: normal;
 }
 
-.live-header {
-  /* padding-top: 100px; */
-
-}
 
 .live-bio {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -841,8 +825,8 @@ iframe {
     /* line-height: 1; */
   }
 
-  #contact h1 {
-    padding-top: 50px;
+  #contact h2 {
+    /* padding-top: 50px; */
     font-size: 50px;
   }
 
